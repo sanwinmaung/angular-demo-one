@@ -1,0 +1,16 @@
+<div class="movie">
+  <br>
+    Name: {{movie.name}}<br>
+    Year: {{movie.year}}<br>
+    <ul>
+      <li *ngFor="let actor of actors">
+        <td>{{actor}}</td>
+      </li>
+    </ul>
+    <b *ngIf="movie.liked">Liked</b>
+    <b *ngIf="!movie.liked">UnLiked</b>
+    <button class="btn btn-primary btn-sm" (click)="onLikeClick()">
+      <b *ngIf="!movie.liked">Like</b>
+      <b *ngIf="movie.liked">UnLike</b>
+    </button>
+</div>

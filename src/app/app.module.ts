@@ -3,13 +3,21 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MovieComponent } from './component/movie/movie.component';
+import {HttpClientModule} from '@angular/common/http';
+import { MovieListPageComponent } from './component/movie-list-page/movie-list-page.component';
+import { MovieTablePageComponent } from './component/movie-table-page/movie-table-page.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MovieComponent,
+    MovieListPageComponent,
+    MovieTablePageComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],

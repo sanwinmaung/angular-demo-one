@@ -1,0 +1,3 @@
+<app-movie *ngFor="let movie of moviesData| async" [movie]="movie"
+           (likeChanged)="movieLikeChanged(movie)">
+</app-movie>
